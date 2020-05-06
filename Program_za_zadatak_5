@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadatci_5__6__7
+{
+    class Program_za_zadatak_5
+    {
+        static void Main(string[] args)
+        {
+            LightTheme lightTheme = new LightTheme();
+            BlueTheme blueTheme = new BlueTheme();
+
+            ReminderNote firstReminder = new ReminderNote("Pošalji mail",lightTheme);
+            ReminderNote secondReminder = new ReminderNote("Napiši zadaću", blueTheme);
+
+            firstReminder.Show();
+            Console.WriteLine();
+            secondReminder.Show();
+        }
+    }
+}
